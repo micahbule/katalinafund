@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katalina Fund · Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="card farm-card" aria-labelledby="farm-title">
+      <div class="card-head">
+        <div class="fund-name">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#4F7A3A" />
+            <path d="M16 25V14" stroke="#FBF6EC" stroke-width="2.2" stroke-linecap="round" />
+            <path d="M16 17c-4.5 0-7-2.6-7-7 4.5 0 7 2.6 7 7Z" fill="#FBF6EC" />
+            <path d="M16 15c0-4 2.3-6.5 7-6.5 0 4-2.3 6.5-7 6.5Z" fill="#E2A93B" />
+          </svg>
+          <h1 id="farm-title">Katalina Fund</h1>
+        </div>
+        <div class="next-event">
+          <span class="next-event-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7Z" /></svg></span>
+          <span class="next-event-text">
+            <span class="next-event-label">Next event · Dec 24</span>
+            <span class="next-event-title">Milestone: Christmas 2026 Pamasko</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="farm">
+        <svg viewBox="0 0 800 520" role="img" aria-label="A small plot of land with a bahay kubo and a patch of seedlings">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#BFE0EE" />
+              <stop offset="0.65" stop-color="#F3EBD8" />
+            </linearGradient>
+            <radialGradient id="sunGlow">
+              <stop offset="0" stop-color="#F7D27A" stop-opacity="0.7" />
+              <stop offset="1" stop-color="#F7D27A" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#A9CC7E" />
+              <stop offset="1" stop-color="#8DBA63" />
+            </linearGradient>
+            <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9A6A44" />
+              <stop offset="1" stop-color="#7E5435" />
+            </linearGradient>
+            <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+              <rect width="8" height="8" fill="#E7CB92" />
+              <path d="M0 4h8M4 0v8" stroke="#D2B275" stroke-width="1.2" />
+            </pattern>
+            <symbol id="seedling" overflow="visible">
+              <g class="sway">
+                <path d="M0 0C0-5 0-9 .5-13" stroke="#4F8A34" stroke-width="2" fill="none" stroke-linecap="round" />
+                <path d="M.5-12C-6-12-9.5-16-9.5-21-3-21 .5-17 .5-12Z" fill="#7DBE4F" />
+                <path d="M.5-13C.5-19 4-23 10-23 10-17 6.5-13 .5-13Z" fill="#9AD265" />
+              </g>
+            </symbol>
+          </defs>
+
+          <!-- sky -->
+          <rect width="800" height="520" fill="url(#sky)" />
+          <circle cx="650" cy="92" r="90" fill="url(#sunGlow)" />
+          <circle cx="650" cy="92" r="36" fill="#F6C954" />
+
+          <g class="cloud cloud-a" fill="#fff" opacity="0.9">
+            <ellipse cx="160" cy="92" rx="46" ry="16" />
+            <ellipse cx="188" cy="80" rx="28" ry="18" />
+            <ellipse cx="138" cy="84" rx="20" ry="13" />
+          </g>
+          <g class="cloud cloud-b" fill="#fff" opacity="0.75">
+            <ellipse cx="470" cy="62" rx="36" ry="12" />
+            <ellipse cx="490" cy="53" rx="20" ry="13" />
+          </g>
+
+          <!-- distant hills -->
+          <path d="M0 300C90 250 170 240 260 270S420 300 500 262 680 220 800 268V520H0Z" fill="#C4DBA4" />
+          <path d="M0 330C120 292 230 300 330 318S540 290 640 300 760 320 800 312V520H0Z" fill="#B3D191" />
+          <g fill="#97BD72">
+            <circle cx="70" cy="318" r="14" /><circle cx="88" cy="322" r="10" />
+            <circle cx="728" cy="300" r="13" /><circle cx="745" cy="306" r="9" />
+          </g>
+
+          <!-- island plot -->
+          <ellipse cx="400" cy="506" rx="330" ry="12" fill="#5E7A44" opacity="0.18" />
+          <path d="M60 470 740 470 728 496 72 496Z" fill="url(#soil)" />
+          <path d="M60 470 740 470 736 480 64 480Z" fill="#6E4A2E" opacity="0.35" />
+          <path d="M60 470 740 470 672 326 128 326Z" fill="url(#grass)" />
+          <path d="M128 326 672 326 676 334 124 334Z" fill="#BFDB96" opacity="0.6" />
+
+          <!-- grass tufts -->
+          <g stroke="#6F9E4A" stroke-width="2" stroke-linecap="round" fill="none">
+            <path d="M120 452l-3-9M124 452v-11M128 452l3-8" />
+            <path d="M370 350l-2-7M373 350v-9M376 350l2-6" />
+            <path d="M690 458l-3-8M694 458v-10M698 458l3-7" />
+            <path d="M160 360l-2-6M163 360v-8M166 360l2-6" />
+          </g>
+
+          <!-- dirt path -->
+          <path d="M238 408C246 430 236 450 214 470H282C290 450 290 428 276 408Z" fill="#D9B98A" />
+
+          <!-- banana plant -->
+          <g transform="translate(128 400)">
+            <path d="M0 0V-46" stroke="#6E9A3E" stroke-width="7" stroke-linecap="round" />
+            <path d="M0-44C-18-60-38-58-48-46-30-46-14-44 0-44Z" fill="#7EB04C" />
+            <path d="M0-46C14-66 34-68 46-56 28-54 14-50 0-46Z" fill="#8DBE57" />
+            <path d="M0-46C-6-70 4-86 18-90 16-72 8-58 0-46Z" fill="#9ACB62" />
+            <path d="M0-40C-20-36-30-22-30-10-18-22-8-30 0-40Z" fill="#6FA040" />
+          </g>
+
+          <!-- bahay kubo -->
+          <g class="house">
+            <ellipse cx="256" cy="410" rx="96" ry="10" fill="#5E7A44" opacity="0.25" />
+            <g fill="#7A5230">
+              <rect x="192" y="326" width="8" height="84" rx="2" />
+              <rect x="232" y="326" width="8" height="84" rx="2" />
+              <rect x="272" y="326" width="8" height="84" rx="2" />
+              <rect x="312" y="326" width="8" height="84" rx="2" />
+            </g>
+            <path d="M196 380 316 380" stroke="#8A6239" stroke-width="4" />
+            <rect x="182" y="320" width="148" height="12" rx="3" fill="#8A5A33" />
+            <rect x="192" y="248" width="128" height="74" fill="url(#weave)" />
+            <rect x="192" y="248" width="128" height="74" fill="none" stroke="#9C7140" stroke-width="3" />
+            <!-- door -->
+            <rect x="238" y="270" width="32" height="52" rx="2" fill="#6B4423" />
+            <rect x="242" y="274" width="24" height="48" fill="#80552F" />
+            <circle cx="262" cy="298" r="2" fill="#E2A93B" />
+            <!-- window -->
+            <rect x="284" y="268" width="26" height="24" rx="2" fill="#5B3A1F" />
+            <rect x="287" y="271" width="20" height="18" fill="#F6E2A8" />
+            <path d="M297 271v18M287 280h20" stroke="#9C7140" stroke-width="2" />
+            <path d="M282 264 312 264 306 270 288 270Z" fill="#B78845" />
+            <!-- ladder -->
+            <g stroke="#7A5230" stroke-width="4" stroke-linecap="round">
+              <path d="M242 332 236 410M266 332 272 410" />
+            </g>
+            <g stroke="#94683A" stroke-width="3" stroke-linecap="round">
+              <path d="M241 348h26M239 366h29M238 384h31M237 400h33" />
+            </g>
+            <!-- roof -->
+            <path d="M168 256 256 176 344 256Z" fill="#C9A15A" />
+            <path d="M168 256 256 176 256 256Z" fill="#B98F4B" />
+            <g stroke="#A27B3C" stroke-width="2" opacity="0.7">
+              <path d="M196 232h120M214 214h84M232 198h48" />
+            </g>
+            <path d="M160 262 256 172 352 262" fill="none" stroke="#9C7140" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M163 260l-4 10M182 260l-3 10M200 260l-2 10M218 260l-1 10M236 260v10M276 260v10M294 260l1 10M312 260l2 10M330 260l3 10M349 260l4 10" stroke="#B48A47" stroke-width="3" stroke-linecap="round" />
+          </g>
+
+          <!-- crop patch -->
+          <g class="patch">
+            <path d="M398 452 682 452 636 346 432 346Z" fill="#7E5435" />
+            <path d="M398 452 682 452 680 458 400 458Z" fill="#5F3E26" />
+            <g fill="none" stroke="#A77650" stroke-linecap="round">
+<path class="furrow" d="M433 371 L631 371" stroke-width="3.8"/>
+<path class="furrow" d="M425 395 L643 395" stroke-width="4.6"/>
+<path class="furrow" d="M418 419 L655 419" stroke-width="5.3"/>
+<path class="furrow" d="M411 443 L667 443" stroke-width="6.0"/>
+            </g>
+<use href="#seedling" transform="translate(442.6 368) scale(0.64)" style="--d:0.78s"/>
+<use href="#seedling" transform="translate(468.1 368) scale(0.64)" style="--d:1.05s"/>
+<use href="#seedling" transform="translate(493.6 368) scale(0.64)" style="--d:1.32s"/>
+<use href="#seedling" transform="translate(519.1 368) scale(0.64)" style="--d:1.59s"/>
+<use href="#seedling" transform="translate(544.5 368) scale(0.64)" style="--d:1.86s"/>
+<use href="#seedling" transform="translate(570.0 368) scale(0.64)" style="--d:0.13s"/>
+<use href="#seedling" transform="translate(595.5 368) scale(0.64)" style="--d:0.40s"/>
+<use href="#seedling" transform="translate(621.0 368) scale(0.64)" style="--d:0.67s"/>
+<use href="#seedling" transform="translate(435.4 392) scale(0.76)" style="--d:1.10s"/>
+<use href="#seedling" transform="translate(463.6 392) scale(0.76)" style="--d:1.37s"/>
+<use href="#seedling" transform="translate(491.9 392) scale(0.76)" style="--d:1.64s"/>
+<use href="#seedling" transform="translate(520.1 392) scale(0.76)" style="--d:1.91s"/>
+<use href="#seedling" transform="translate(548.3 392) scale(0.76)" style="--d:0.18s"/>
+<use href="#seedling" transform="translate(576.5 392) scale(0.76)" style="--d:0.45s"/>
+<use href="#seedling" transform="translate(604.8 392) scale(0.76)" style="--d:0.72s"/>
+<use href="#seedling" transform="translate(633.0 392) scale(0.76)" style="--d:0.99s"/>
+<use href="#seedling" transform="translate(428.2 416) scale(0.88)" style="--d:1.41s"/>
+<use href="#seedling" transform="translate(459.2 416) scale(0.88)" style="--d:1.68s"/>
+<use href="#seedling" transform="translate(490.1 416) scale(0.88)" style="--d:1.95s"/>
+<use href="#seedling" transform="translate(521.1 416) scale(0.88)" style="--d:0.22s"/>
+<use href="#seedling" transform="translate(552.1 416) scale(0.88)" style="--d:0.49s"/>
+<use href="#seedling" transform="translate(583.1 416) scale(0.88)" style="--d:0.76s"/>
+<use href="#seedling" transform="translate(614.0 416) scale(0.88)" style="--d:1.03s"/>
+<use href="#seedling" transform="translate(645.0 416) scale(0.88)" style="--d:1.30s"/>
+<use href="#seedling" transform="translate(421.0 440) scale(1.00)" style="--d:1.72s"/>
+<use href="#seedling" transform="translate(454.7 440) scale(1.00)" style="--d:1.99s"/>
+<use href="#seedling" transform="translate(488.4 440) scale(1.00)" style="--d:0.26s"/>
+<use href="#seedling" transform="translate(522.1 440) scale(1.00)" style="--d:0.53s"/>
+<use href="#seedling" transform="translate(555.9 440) scale(1.00)" style="--d:0.80s"/>
+<use href="#seedling" transform="translate(589.6 440) scale(1.00)" style="--d:1.07s"/>
+<use href="#seedling" transform="translate(623.3 440) scale(1.00)" style="--d:1.34s"/>
+<use href="#seedling" transform="translate(657.0 440) scale(1.00)" style="--d:1.61s"/>
+          </g>
+
+          <!-- sign post -->
+          <g transform="translate(700 420)">
+            <rect x="-3" y="0" width="6" height="40" rx="2" fill="#7A5230" />
+            <rect x="-30" y="-20" width="60" height="26" rx="4" fill="#C9A15A" stroke="#9C7140" stroke-width="2" />
+            <text x="0" y="-3" text-anchor="middle" font-family="Fraunces, serif" font-size="12" font-weight="600" fill="#4A3320">Katalina</text>
+          </g>
+        </svg>
+      </div>
+
+      <dl class="stats">
+        <div>
+          <dt>Total balance</dt>
+          <dd class="balance">₱2,000.00</dd>
+        </div>
+        <div>
+          <dt>Deposits made</dt>
+          <dd>1</dd>
+        </div>
+        <div>
+          <dt>Established since</dt>
+          <dd>Nov 21, 2026</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="card tx-card" aria-labelledby="tx-title">
+      <div class="card-head">
+        <h2 id="tx-title">Fund activities</h2>
+        <button class="link-btn" type="button">View all</button>
+      </div>
+
+      <p class="tx-group">Upcoming</p>
+      <ul class="tx-list">
+        <li class="tx tx-upcoming tx-milestone">
+          <span class="tx-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l3 2" /></svg></span>
+          <div class="tx-main"><span class="tx-title">Deposit <span class="tag">Milestone</span></span><span class="tx-note">Christmas 2026 Pamasko</span><span class="tx-meta">Dec 24, 2026<span class="tx-ref"> · KF-0002</span></span></div>
+          <span class="tx-amount">+₱5,000.00</span>
+        </li>
+        <li class="tx tx-upcoming">
+          <span class="tx-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l3 2" /></svg></span>
+          <div class="tx-main"><span class="tx-title">Deposit</span><span class="tx-meta">Jan 21, 2027<span class="tx-ref"> · KF-0003</span></span></div>
+          <span class="tx-amount">+₱1,000.00</span>
+        </li>
+        <li class="tx tx-upcoming">
+          <span class="tx-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l3 2" /></svg></span>
+          <div class="tx-main"><span class="tx-title">Deposit</span><span class="tx-meta">Feb 21, 2027<span class="tx-ref"> · KF-0004</span></span></div>
+          <span class="tx-amount">+₱1,000.00</span>
+        </li>
+        <li class="tx tx-upcoming">
+          <span class="tx-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l3 2" /></svg></span>
+          <div class="tx-main"><span class="tx-title">Deposit</span><span class="tx-meta">Mar 21, 2027<span class="tx-ref"> · KF-0005</span></span></div>
+          <span class="tx-amount">+₱1,000.00</span>
+        </li>
+      </ul>
+
+      <p class="tx-group">Completed</p>
+      <ul class="tx-list">
+        <li class="tx">
+          <span class="tx-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" /></svg></span>
+          <div class="tx-main"><span class="tx-title">Deposit</span><span class="tx-meta">Today, Nov 21, 2026<span class="tx-ref"> · KF-0001</span></span></div>
+          <span class="tx-amount">+₱2,000.00</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
