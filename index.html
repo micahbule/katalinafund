@@ -224,7 +224,10 @@
     <section class="card tx-card" aria-labelledby="tx-title">
       <div class="card-head">
         <h2 id="tx-title">Fund activities</h2>
-        <button class="link-btn" type="button">View all</button>
+        <span class="tooltip" data-tooltip="Coming soon" tabindex="0">
+          <button class="link-btn" type="button" disabled aria-describedby="view-all-tip">View all</button>
+          <span id="view-all-tip" class="sr-only">Coming soon</span>
+        </span>
       </div>
 
       <p class="tx-group">Upcoming</p>
